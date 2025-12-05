@@ -331,8 +331,8 @@ export const chata = async (req, res) => {
       'https://api.cohere.ai/v1/chat',
       {
         message: userMessage,
-        chat_history: [], // required by Cohere
-        model: 'command-r-plus', // 'command-r' or 'command-r-plus'
+        chat_history: [], 
+        model:'command-r-plus-08-2024', 
         temperature: 0.5,
         stream: false
       },
