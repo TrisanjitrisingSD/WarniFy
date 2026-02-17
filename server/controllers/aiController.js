@@ -80,6 +80,7 @@ export const generateArticle = async (req, res) => {
     const { prompt, length } = req.body;
     const plan= req.plan;
     const free_usage = req.free_usage;
+    const { userId } = req.auth();
 
     const safeLength = length ? Math.max(length, 4000) : 4000;
 
