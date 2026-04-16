@@ -45,10 +45,10 @@ const BlogTitles = () => {
       if (data.success) {
         setContent(data.content);
       } else {
-        toast.error(data.message);
+         toast.error("AI Server is busy or down. Please try again later.");
       }
     } catch (error) {
-      toast.error(error.message);
+       toast.error("AI Server is busy or down. Please try again later.");
     }
     setLoading(false);
   }
